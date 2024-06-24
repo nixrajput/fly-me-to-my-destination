@@ -48,4 +48,4 @@ Here's the step-by-step approach to solving the problem:
    - If `i` reaches `currentMaxReach`, it means we need to hire a new plane. Update `currentMaxReach` to `nextMaxReach` and increment `planesHired`.
    - If `currentMaxReach` has not advanced (i.e., it is equal to `i`), return -1 because we are stuck.
 
-This version maintains the \(O(N)\) time complexity and ensures clarity and readability.
+This approach maintains the \(O(N)\) time complexity and ensures clarity and readability.
