@@ -1,0 +1,28 @@
+# This workflow will do a clean installation of Bun and dependencies and run tests
+
+name: Test with Bun
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Bun
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: latest
+
+    - name: Run Tests
+      run: | 
+        bun install
+        bun test

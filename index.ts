@@ -1,4 +1,4 @@
-function minPlanesToReachLastAirport(fuels: number[]): number {
+export function minPlanesToReachLastAirport(fuels: number[]): number {
   const N = fuels.length;
   if (N === 0) {
     return -1;
@@ -34,7 +34,3 @@ function minPlanesToReachLastAirport(fuels: number[]): number {
 
   return -1;
 }
-
-// Test cases
-console.log(minPlanesToReachLastAirport([2, 1, 2, 3, 1])); // Output: 2
-console.log(minPlanesToReachLastAirport([1, 6, 3, 4, 5, 0, 0, 0, 6])); // Output: 3
